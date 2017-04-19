@@ -30,6 +30,7 @@ class Net(object):
             # tf.summary.histogram('bias', bias)
             maps = tf.nn.bias_add(maps_, bias)
 
+            maps = self.batch_normalize(maps, nf) if norm else maps
             maps = act(maps) if act is not None else maps
 
             return maps

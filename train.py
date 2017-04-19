@@ -5,13 +5,13 @@ from trainer import Trainer
 
 # Model hyperparamaters
 opts = {
-    'batch_size': 2,
-    'iterations': 1000000,
-    'learning_rate': 5e-2,
-    'print_every': 1,
-    'save_every': 100,
-    'training_height': 256,
-    'training_width': 256,
+    'batch_size': 4,
+    'iterations': 2000000,
+    'learning_rate': 5e-5,
+    'print_every': 100,
+    'save_every': 10000,
+    'training_height': 128,
+    'training_width': 128,
 }
 
 
