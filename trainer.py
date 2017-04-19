@@ -26,7 +26,7 @@ class Trainer:
         input_grayscale, labels = tf.train.shuffle_batch([example, label], 
                                     self.batch_size,
                                     num_threads=4,
-                                    capacity=50000,
+                                    capacity=20000,
                                     min_after_dequeue=10000)
 
         sample = self.hgr_network.predictSignal(input_grayscale)
